@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "homeTeam": "Team A",
+    "awayTeam": "Team B",
+    "homeTeamOdds": 1.97,
+    "drawOdds": 3.70,
+    "awayTeamOdds": 3.85
+  },
+  {
+    "id": 2,
+    "homeTeam": "Team C",
+    "awayTeam": "Team D",
+    "homeTeamOdds": 4.29,
+    "drawOdds": 1.52,
+    "awayTeamOdds": 7.18
+  },
+  {
+    "id": 3,  
+    "homeTeam": "Team E",
+    "awayTeam": "Team F",
+    "homeTeamOdds": 3.00,
+    "drawOdds": 3.20,
+    "awayTeamOdds": 2.30
+  },
+  {
+    "id": 4,  
+    "homeTeam": "Team G",
+    "awayTeam": "Team H",
+    "homeTeamOdds": 1.60,
+    "drawOdds": 3.75,
+    "awayTeamOdds": 5.00
+  },
+  {
+    "id": 5,
+    "homeTeam": "Team I",
+    "awayTeam": "Team J",
+    "homeTeamOdds": 1.70,
+    "drawOdds": 3.50,
+    "awayTeamOdds": 4.50
+  }
+]

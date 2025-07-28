@@ -2,6 +2,8 @@
 
 Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
 
+Node.js - 20.x or newer (but we recommend the [active LTS release](https://github.com/nodejs/release#release-schedule))
+
 ## Setup
 
 Make sure to install dependencies:

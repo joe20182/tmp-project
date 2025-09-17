@@ -1,9 +1,13 @@
 <template>
   <div>
     <h1 class="text-2xl font-bold">Q3</h1>
-    <code-section code="Please review the code and provide any suggestions for improvement. Just like a code review you used to do." />
+    <code-section
+      code="Please review the code and provide any suggestions for improvement. Just like a code review you used to do."
+    />
 
-    <pre class="bg-gray-50/10 border border-[#00DC42]/50 dark:bg-white/5 flex flex-col gap-1 p-2 rounded-lg sm:col-span-2 my-4">
+    <pre
+      class="bg-gray-50/10 border border-[#00DC42]/50 dark:bg-white/5 flex flex-col gap-1 p-2 rounded-lg sm:col-span-2 my-4"
+    >
       <code>
         {{ getGiftTips }}
       </code>
@@ -16,14 +20,22 @@
  * q3:
  * @description 請 review 這段程式碼，並提供任何改進的建議。就像你過去做過的程式碼審查一樣。
  * @description Please review the code and provide any suggestions for improvement. Just like a code review you used to do.
- * 
+ *
  * @hint 請提供任何改進的建議，包括但不限於程式碼結構、可讀性、效能、安全性、可維護性等。
  * @hint Please provide any suggestions for improvement, including but not limited to code structure, readability, performance, security, etc.
  **/
 
 defineOptions({
-  name: 'Q3',
-})
+  name: "Q3",
+});
+
+/**
+ * 1. 傳參deviceScope沒有定義型別，無法一眼得知是number array
+ * 2. 沒有做錯誤處裡，若deviceScope不是array會報錯
+ * 3. 下方用123個別代表不同裝置不易讀，可以先定義一個const object來做mapping
+ * 4. 變數定義也很混淆，變數以is開頭容易讓人誤會是boolean
+ * 5. marker用數學計算得出1/2/3的值也很難聯想到跟device間的關係，可以單純以isSuportXXX的bolean來判斷要return什麼
+ */
 
 function getGiftTips(deviceScope) {
   let isSupportApp = 0,
@@ -60,9 +72,6 @@ function getGiftTips(deviceScope) {
 
   return maskTips;
 }
-
 </script>
 
-<style>
-
-</style>
+<style></style>
